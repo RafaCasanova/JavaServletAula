@@ -8,10 +8,10 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet(urlPatterns="/oi")
+@WebServlet(urlPatterns="/oi")//Parametro pra ser chamado no http
 public class OiMundo extends HttpServlet {
 	
-	@Override
+	@Override //resposta da pagina
 	protected void service(HttpServletRequest arg0, HttpServletResponse arg1) throws IOException{
 		PrintWriter out = arg1.getWriter();
 		out.println("<html>");
